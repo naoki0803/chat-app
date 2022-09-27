@@ -7,25 +7,56 @@
 }
 
 /*----------------------------------------
-  side_bar
+  side_bar-header
 ----------------------------------------*/
 
 .side-bar {
   width: 300px;
   background-color: #253141;
-  padding: 0 20px;
 }
 
 
 .side-bar_header {
   height: 100px;
   /* background-color: #253141; 親要素と同じなので記述需要 */ 
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.header-name a{
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
 
-.side-bar_rooms {
+.create-room a {
+  padding: 14px;
+  border: 1px solid lightblue;
+  font-size: 10px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+/*----------------------------------------
+  side_bar-header
+----------------------------------------*/
+
+.rooms {
   height: calc(100vh - 100px);
   background-color: #2f3e51; 
+  padding: 0 20px;
+  overflow: scroll
+}
+
+.room{
+  padding: 20px 0 40px 0;
+}
+
+.room-name a{
+  text-decoration: none;
+  color: white;
 }
 
 /*----------------------------------------
@@ -35,22 +66,22 @@
 .chat {
   width: calc(100vw - 300px);
   background-color: #FFFFFF;
-  padding: 0 40px;
 }
 
 .chat_header {
   height: 100px;
   /* background-color: #FFFFFF; */
+  padding: 0 40px;
 }
 
 .chat-messages {
   height: calc(100vh - 100px - 90px);
   background-color: #fafafa; 
-  padding-top: 46px;
+  padding: 46px 40px 0 40px;
 }
 
 .chat-form {
   height: 90px;
   background-color: #DDDDDD;
-  padding: 20px 0;
+  padding: 20px 40px;
 }
