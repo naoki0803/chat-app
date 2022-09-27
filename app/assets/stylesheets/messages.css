@@ -1,0 +1,56 @@
+
+
+
+.wrapper{
+  display: flex;
+  height: 100vh;
+}
+
+/*----------------------------------------
+  side_bar
+----------------------------------------*/
+
+.side-bar {
+  width: 300px;
+  background-color: #253141;
+  padding: 0 20px;
+}
+
+
+.side-bar_header {
+  height: 100px;
+  /* background-color: #253141; 親要素と同じなので記述需要 */ 
+}
+
+
+.side-bar_rooms {
+  height: calc(100vh - 100px);
+  background-color: #2f3e51; 
+}
+
+/*----------------------------------------
+  chat
+----------------------------------------*/
+
+.chat {
+  width: calc(100vw - 300px);
+  background-color: #FFFFFF;
+  padding: 0 40px;
+}
+
+.chat_header {
+  height: 100px;
+  /* background-color: #FFFFFF; */
+}
+
+.chat-messages {
+  height: calc(100vh - 100px - 90px);
+  background-color: #fafafa; 
+  padding-top: 46px;
+}
+
+.chat-form {
+  height: 90px;
+  background-color: #DDDDDD;
+  padding: 20px 0;
+}
